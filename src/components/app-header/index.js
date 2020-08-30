@@ -11,7 +11,7 @@ export default memo(function SCAppHeader() {
   const showSelectItem = (item, index) => {
     if (index < 3 || index === 5) {
       return (
-        <NavLink exact to={item.link}>
+        <NavLink to={item.link}>
           {item.title}
           <i className="icon sprite_01"></i>
         </NavLink>
@@ -30,7 +30,7 @@ export default memo(function SCAppHeader() {
       <div className="content wrap-v1">
         <HeaderLeft>
           <a href="/#" hidefocus="false" className="logo sprite_01">
-            {" "}
+            music
           </a>
           <div className="select-list">
             {headerLinks.map((item, index) => {

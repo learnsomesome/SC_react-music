@@ -25,6 +25,7 @@ export const HeaderLeft = styled.div`
     width: 177px;
     height: 69px;
     background-position: 0 0;
+    text-indent: -9999px;
   }
 
   .select-list {
@@ -53,7 +54,7 @@ export const HeaderLeft = styled.div`
       }
 
       &:hover a,
-      a.active {
+      .active {
         color: #fff;
         background: #000;
         text-decoration: none;
