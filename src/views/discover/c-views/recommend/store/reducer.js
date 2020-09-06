@@ -1,13 +1,15 @@
+import { Map } from "immutable";
+
 import * as actionTypes from "./constants";
 
-const defaultState = {
-  topBanner: [],
-};
+const defaultState = Map({
+  topBanners: [],
+});
 
 function reducer(state = defaultState, action) {
   switch (action.type) {
     case actionTypes.CHANGE_TOP_BNNAER:
-      return { ...state, topBanner: [] };
+      return state.set("topBanners", action.topBanners);
     default:
       return state;
   }
